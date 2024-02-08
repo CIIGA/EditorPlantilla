@@ -1,0 +1,80 @@
+
+  @font-face {
+    font-family: 'CalibriRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Calibri/CalibriRegular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'CalibriCursiva';
+    font-style: normal;
+    font-weight: normal;
+    src: url(font/Calibri/CalibriCursiva.ttf) format('truetype');
+}
+
+#header,
+#footer {
+    position: fixed;
+    left: 10mm;
+    right: 5mm;
+    font-size: 0.9em;
+}
+
+#header {
+    top: -32;
+    font-family: 'CalibriRegular';
+}
+
+#footer {
+    bottom: -10;
+    font-size: 7pt;
+    line-height: 1;
+    font-family: 'CalibriRegular';
+}
+
+.texto-parrafo {
+    text-align: justify;
+    font-size: 8pt;
+    line-height: 1;
+    font-family: 'CalibriRegular';
+}
+
+body {
+    /* margin: Top, Right, Bottom, Left*/
+    margin: 5mm 5mm 10mm 10mm;
+    font-family: arial;
+    /*background-image: url(http://localhost/dompdf/images/sinFoto.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+hr {
+    page-break-after: always;
+    border: 0;
+}
+
+.tabla-back {
+    width: 100%;
+    background-image: url(http://localhost/dompdf/images/backMark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imageTableSIA {
+    background-position: right;
+    background-image: url(http://localhost/dompdf/images/SiAPA_Letras_2.png);
+    background-size: 12mm 8mm;
+    background-repeat: no-repeat;
+}
+
+/* pre { margin:10px 0; padding:5px; } Revisar utilidad en el espacio para la firma */
+
+div.absolute {
+    border: 0;
+    position: absolute;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
