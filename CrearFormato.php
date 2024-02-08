@@ -32,7 +32,7 @@ try {
     $Nmodulo = $modulo['nombre'];
 
     // Ubicacion de la carpeta del modulo
-    $moduloPath = 'C:/wamp64/www/EditorPlantilla/plantillas/' . $Nmodulo;
+    $moduloPath = 'C:/inetpub/vhosts/beautiful-einstein.51-79-98-210.plesk.page/httpdocs/EditorPlantilla/plantillas/' . $Nmodulo;
 
     // Directorio de la carpeta del formato
     $formatoPath = $moduloPath . '/' . $nombre;
@@ -53,9 +53,9 @@ try {
     cargar($directorioCss, $css);
     cargar($directorioFondo, $fondo);
 
-    $urlHtml='http://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/html.txt';
-    $urlCss='http://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/css.txt';
-    $urlFondo='http://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/fondo.txt';
+    $urlHtml='https://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/html.txt';
+    $urlCss='https://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/css.txt';
+    $urlFondo='https://'.$_SERVER['HTTP_HOST'].'/EditorPlantilla/plantillas/'.$Nmodulo.'/'.$nombre.'/fondo.txt';
 
 
 
