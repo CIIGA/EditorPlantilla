@@ -1,0 +1,19 @@
+<div id="header" >
+        <table style="width: 100%; border-collapse: collapse; ">
+            <tr>
+                <th style="width: 25%; border-bottom-right-radius: 45px; background-color: #074D78; opacity: 0.4;">Logo SIAPA</th>
+                <th style="width: 10%;"> </th>
+                <th style="width: 65%; color: white; background-color: #92C9E0; border-top-left-radius: 15px; border-bottom-right-radius: 15px; height: 30;">UNIDAD DE DETERMINACION.<br /> EJECUCION FISCAL Y FISCALIZACIÓN (UDEFF)</th>
+            </tr>
+        </table>
+    </div>
+    <div id="footer" >
+        <table style="width: 100%; border-collapse: collapse; ">
+            <tr>
+                <th style="width: 20%; border-bottom: 3pt solid #074D78; opacity: 0.4;">Logo jalisco</th>
+                <th style="width: 30%; border-bottom: 3pt solid #074D78; text-align: left; opacity: 0.4;">Texto despues del logo de jalisco con direccion y otras cosas</th>
+                <th style="width: 30%; border-bottom: 3pt solid #00ACD6; opacity: 0.4;">Fecha_De_Elaboracion</th>
+                <th style="width: 20%; border-bottom: 3pt solid #00ACD6; background-color: #074D78; border-top-left-radius: 45px; height: 30; opacity: 0.4;">Logo SIAPA</th>
+            </tr>
+        </table>
+    </div>

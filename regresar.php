@@ -24,7 +24,7 @@ $formato = sqlsrv_fetch_array($sql_formato);
 $Nformato = $formato['nombre'];
 
 // Ubicacion de la carpeta del modulo
-$moduloPath = 'C:/wamp64/www/EditorPlantilla/plantillas/' . $Nmodulo;
+$moduloPath = 'C:/inetpub/vhosts/beautiful-einstein.51-79-98-210.plesk.page/httpdocs/EditorPlantilla/plantillas/' . $Nmodulo;
 
 // Directorio de la carpeta del formato
 $formatoPath = $moduloPath . '/' . $Nformato;

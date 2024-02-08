@@ -10,6 +10,11 @@ $html = $formatos['html'];
 $css = $formatos['css'];
 $fondo = $formatos['fondo'];
 $tamanio=$formatos['tamanio'];
+
+$html = str_replace(' ', '%20', $html);
+$css = str_replace(' ', '%20', $css);
+$fondo = str_replace(' ', '%20', $fondo);
+
 $contenido = file_get_contents($html);
 $contenidoCss = file_get_contents($css);
 $contenidoFondo = file_get_contents($fondo);

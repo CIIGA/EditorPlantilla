@@ -25,7 +25,10 @@ if (!sqlsrv_has_rows($sql_validar)) {
 $formatos = sqlsrv_fetch_array($sql_validar);
 $html = $formatos['html'];
 $css = $formatos['css'];
-$fondo = $formatos['fondo'];
+
+$html = str_replace(' ', '%20', $html);
+$css = str_replace(' ', '%20', $css);
+
 $contenido = file_get_contents($html);
 $contenidoCss = file_get_contents($css);
 

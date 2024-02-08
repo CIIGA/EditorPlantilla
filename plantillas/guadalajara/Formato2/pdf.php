@@ -1,7 +1,7 @@
 <?php
-// ob_start();
-require "../cnx/cnx.php";
-$id_formato = 1;
+ob_start();
+require "../../../cnx/cnx.php";
+$id_formato = 2;
 // validar si el formato pertenece al modulo
 $sql_formato = sqlsrv_query($cnx, "select * from formatos where id='$id_formato'");
 
@@ -10,11 +10,16 @@ $html = $formatos['html'];
 $css = $formatos['css'];
 $fondo = $formatos['fondo'];
 $tamanio=$formatos['tamanio'];
+
+$html = str_replace(' ', '%20', $html);
+$css = str_replace(' ', '%20', $css);
+$fondo = str_replace(' ', '%20', $fondo);
+
 $contenido = file_get_contents($html);
 $contenidoCss = file_get_contents($css);
 $contenidoFondo = file_get_contents($fondo);
-echo $contenido;
-exit();
+
+$contenido = str_replace("v_nombre", "Adrian", $contenido);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +46,7 @@ exit();
 $html = ob_get_clean();
 
 
-require_once "dompdf/autoload.inc.php";
+require_once "../../../pdf/dompdf/autoload.inc.php";
 
 use Dompdf\Dompdf;
 
@@ -57,7 +62,7 @@ $tipo='letter';
 if ($tamanio=='oficio') {
     $tipo='legal';
 }
-$pdf->setPaper('A4', 'legal');
+$pdf->setPaper($tipo, 'portrait'); 
 // horizontal
 // $dompdf->setPaper('A4', 'landscape'); 
 $pdf->render();
